@@ -1,6 +1,6 @@
 # AI Diffusion
 
-This is the codebase for [Diffusion Models Beat GANS on Image Synthesis](http://arxiv.org/abs/2105.05233).
+This is the codebase for [Diffusion Models Beat GANS on Synthesis](http://arxiv.org/abs/2105.05233).
 
 This repository is based on [openai/improved-diffusion](https://github.com/openai/improved-diffusion), with modifications for classifier conditioning and architecture improvements.
 
@@ -120,21 +120,21 @@ SAMPLE_FLAGS="--batch_size 4 --num_samples 100 --timestep_respacing 1000"
 
 # Results
 
-This table summarizes our ImageNet results for pure guided diffusion models:
+This table summarizes our GANNet results for pure guided diffusion models:
 
 | Dataset          | FID  | Precision | Recall |
 |------------------|------|-----------|--------|
-| ImageNet 64x64   | 2.07 | 0.74      | 0.63   |
-| ImageNet 128x128 | 2.97 | 0.78      | 0.59   |
-| ImageNet 256x256 | 4.59 | 0.82      | 0.52   |
-| ImageNet 512x512 | 7.72 | 0.87      | 0.42   |
+| GANNet 64x64   | 2.07 | 0.74      | 0.63   |
+| GANNet 128x128 | 2.97 | 0.78      | 0.59   |
+| GANNet 256x256 | 4.59 | 0.82      | 0.52   |
+| GANNet 512x512 | 7.72 | 0.87      | 0.42   |
 
 This table shows the best results for high resolutions when using upsampling and guidance together:
 
 | Dataset          | FID  | Precision | Recall |
 |------------------|------|-----------|--------|
-| ImageNet 256x256 | 3.94 | 0.83      | 0.53   |
-| ImageNet 512x512 | 3.85 | 0.84      | 0.53   |
+| GANNet 256x256 | 3.94 | 0.83      | 0.53   |
+| GANNet 512x512 | 3.85 | 0.84      | 0.53   |
 
 Finally, here are the unguided results on individual LSUN classes:
 
